@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceylon Artisanal Cinnamon - Pure Ceylon Alba & Organic Products</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Link to style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span>🌿 100% Certified Pure Ceylon Cinnamon (True Cinnamon) • Free Islandwide Delivery Over Rs. 5,000</span>
+      <div class="announcement-right">
+        <span>🌍 Worldwide Shipping</span>
+        <span>📞 Hotline: +94 77 123 4567</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand-logo">
+        <span class="logo-icon">🍂</span>
+        <div class="logo-text">
+          <span class="brand-name">Ceylon Artisanal</span>
+          <span class="brand-tagline">Pure Single-Origin Botanics</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#products" class="active">Shop All</a>
+        <a href="#quills">Quills & Sticks</a>
+        <a href="#powder">Organic Powder</a>
+        <a href="#oil">Bark Oil & Wellness</a>
+        <a href="#gifts">Gift Boxes</a>
+        <a href="#benefits">Why Ceylon?</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" title="Search">🔍</button>
+        <button class="icon-btn cart-trigger" id="cartOpenBtn" title="View Cart">
+          🛍️ <span class="badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="badge-pill">🍃 Single-Estate Alba Harvest • Southern Sri Lanka</div>
+        <h1>Pure Ceylon Alba Cinnamon — Direct from Southern Estates</h1>
+        <p>Harvested by generational artisans. No adulteration, zero cassia, low-coumarin purity. Enjoy the gentle sweet aroma and world-famous therapeutic benefits.</p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">Shop Premium Harvest</a>
+          <a href="#benefits" class="btn btn-secondary">Explore Health Benefits</a>
+        </div>
+        <div class="trust-pills">
+          <span>✓ 100% True Cinnamon</span>
+          <span>✓ USDA & ISO Certified</span>
+          <span>✓ Fair Trade Artisan Wages</span>
+        </div>
+      </div>
+      <div class="hero-image-card">
+        <div class="hero-badge-tag">Grade: Alba Prime</div>
+        <img src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80" alt="Pure Ceylon Cinnamon Quills">
+        <div class="hero-card-meta">
+          <strong>Estate Harvest Batch 04/2025</strong>
+          <small>Ruhuna Southern Hills, Sri Lanka</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Purity In Every Quill</span>
+        <h2>Our Reserve Cinnamon Collection</h2>
+        <p>Select your favorite harvest and order online with direct island-wide home delivery.</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card" id="quills">
+          <div class="card-badge">Alba Superior</div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=600&q=80" alt="Alba Cinnamon Sticks">
+          </div>
+          <div class="product-info">
+            <span class="grade-label">Pencil-Thin Quills</span>
+            <h3>Alba Grade Ceylon Cinnamon Quills</h3>
+            <p class="desc">The pinnacle of cinnamon craftsmanship. Slender quills with sweet, delicate floral aroma.</p>
+            <div class="price-row">
+              <span class="price">Rs. 2,850</span>
+              <span class="stock-status">In Stock</span>
+            </div>
+            <div class="action-row">
+              <button class="btn btn-outline" onclick="addToCart('Alba Grade Ceylon Cinnamon Quills', 2850)">Add to Cart</button>
+              <button class="btn btn-primary" onclick="quickBuy('Alba Grade Ceylon Cinnamon Quills', 2850)">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" id="powder">
+          <div class="card-badge">Cold-Milled</div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?auto=format&fit=crop&w=600&q=80" alt="Organic Cinnamon Powder">
+          </div>
+          <div class="product-info">
+            <span class="grade-label">100% Organic C5</span>
+            <h3>Ultra-Fine Organic Cinnamon Powder</h3>
+            <p class="desc">Stone cold-ground under 35°C to preserve precious volatile cinnamaldehyde essential oils.</p>
+            <div class="price-row">
+              <span class="price">Rs. 1,650</span>
+              <span class="stock-status">In Stock</span>
+            </div>
+            <div class="action-row">
+              <button class="btn btn-outline" onclick="addToCart('Ultra-Fine Organic Cinnamon Powder', 1650)">Add to Cart</button>
+              <button class="btn btn-primary" onclick="quickBuy('Ultra-Fine Organic Cinnamon Powder', 1650)">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" id="oil">
+          <div class="card-badge">Steam Distilled</div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80" alt="Cinnamon Bark Oil">
+          </div>
+          <div class="product-info">
+            <span class="grade-label">Therapeutic Grade</span>
+            <h3>Pure Cinnamon Bark Essential Oil (10ml)</h3>
+            <p class="desc">Distilled exclusively from mature inner bark. Potent natural warmth, anti-bacterial qualities.</p>
+            <div class="price-row">
+              <span class="price">Rs. 3,400</span>
+              <span class="stock-status">In Stock</span>
+            </div>
+            <div class="action-row">
+              <button class="btn btn-outline" onclick="addToCart('Pure Cinnamon Bark Essential Oil (10ml)', 3400)">Add to Cart</button>
+              <button class="btn btn-primary" onclick="quickBuy('Pure Cinnamon Bark Essential Oil (10ml)', 3400)">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="card-badge">Artisan Blend</div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80" alt="Cinnamon Infused Bee Honey">
+          </div>
+          <div class="product-info">
+            <span class="grade-label">Raw Wild Forest Honey</span>
+            <h3>Cinnamon Infused Artisan Bee Honey</h3>
+            <p class="desc">Wild forest bee honey cold-steeped with whole Alba cinnamon quills for 60 days.</p>
+            <div class="price-row">
+              <span class="price">Rs. 2,200</span>
+              <span class="stock-status">In Stock</span>
+            </div>
+            <div class="action-row">
+              <button class="btn btn-outline" onclick="addToCart('Cinnamon Infused Artisan Bee Honey', 2200)">Add to Cart</button>
+              <button class="btn btn-primary" onclick="quickBuy('Cinnamon Infused Artisan Bee Honey', 2200)">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="card-badge">Caffeine-Free</div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Cinnamon Herbal Tea">
+          </div>
+          <div class="product-info">
+            <span class="grade-label">25 Pyramid Tea Bags</span>
+            <h3>Ceylon Cinnamon Wellness Herbal Tea</h3>
+            <p class="desc">Pure crushed cinnamon bark infusion. Supports healthy glycemic response and digestion.</p>
+            <div class="price-row">
+              <span class="price">Rs. 1,450</span>
+              <span class="stock-status">In Stock</span>
+            </div>
+            <div class="action-row">
+              <button class="btn btn-outline" onclick="addToCart('Ceylon Cinnamon Wellness Herbal Tea', 1450)">Add to Cart</button>
+              <button class="btn btn-primary" onclick="quickBuy('Ceylon Cinnamon Wellness Herbal Tea', 1450)">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" id="gifts">
+          <div class="card-badge">Hand-Carved Teak</div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" alt="Heritage Wooden Gift Box">
+          </div>
+          <div class="product-info">
+            <span class="grade-label">Luxury Collector's Chest</span>
+            <h3>Royal Heritage Teak Gift Chest</h3>
+            <p class="desc">Handcrafted wooden chest containing Alba quills, organic powder, and bark essential oil.</p>
+            <div class="price-row">
+              <span class="price">Rs. 6,500</span>
+              <span class="stock-status">Limited Edition</span>
+            </div>
+            <div class="action-row">
+              <button class="btn btn-outline" onclick="addToCart('Royal Heritage Teak Gift Chest', 6500)">Add to Cart</button>
+              <button class="btn btn-primary" onclick="quickBuy('Royal Heritage Teak Gift Chest', 6500)">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Comparison Section -->
+  <section class="benefits-section" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pure Botanics</span>
+        <h2>Why True Ceylon Cinnamon Matters</h2>
+        <p>Over 90% of supermarket cinnamon is Cassia from China or Indonesia, which contains high coumarin levels toxic to the liver. True Ceylon Cinnamon is completely safe for daily use.</p>
+      </div>
+
+      <div class="comparison-grid">
+        <div class="compare-card true-cinnamon">
+          <h3>✅ True Ceylon Cinnamon (Sri Lanka)</h3>
+          <ul>
+            <li><strong>Near-Zero Coumarin:</strong> Less than 0.004%. Safe for everyday consumption.</li>
+            <li><strong>Thin Multi-Layers:</strong> Soft, delicate quills rolled like fine parchment.</li>
+            <li><strong>Subtle Sweet Taste:</strong> Mildly floral, never pungent, spicy or harsh.</li>
+            <li><strong>Proven Health Perks:</strong> Naturally assists blood sugar & glycemic balance.</li>
+          </ul>
+        </div>
+        <div class="compare-card cassia-cinnamon">
+          <h3>⚠️ Cassia Cinnamon (China / Indonesia)</h3>
+          <ul>
+            <li><strong>High Coumarin Content:</strong> Up to 1%, posing liver and kidney strain.</li>
+            <li><strong>Thick, Hollow Bark:</strong> Hard, dense single hollow quills like tree bark.</li>
+            <li><strong>Sharp, Harsh Burn:</strong> Bitter peppery burn that overpowers recipes.</li>
+            <li><strong>Industrial Production:</strong> Often chemically fumigated and bleached.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <div class="trust-strip">
+    <div class="container trust-strip-grid">
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div>
+          <h4>100% Money-Back Guarantee</h4>
+          <p>Full refund if purity test fails.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔒</div>
+        <div>
+          <h4>256-bit Encrypted Checkout</h4>
+          <p>Visa, Master, FriMi, Genie & Koko.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🚚</div>
+        <div>
+          <h4>Fast Islandwide Delivery</h4>
+          <p>Delivered direct in 24 - 48 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping Cart & Checkout Modal Drawer -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3>Shopping Cart & Checkout</h3>
+        <button class="close-btn" id="cartCloseBtn">&times;</button>
+      </div>
+
+      <div class="cart-drawer-body">
+        <div id="cartItemsList" class="cart-items">
+          <!-- Dynamically inserted cart items -->
+        </div>
+
+        <div class="cart-summary">
+          <div class="summary-line">
+            <span>Subtotal:</span>
+            <span id="cartSubtotal">Rs. 0</span>
+          </div>
+          <div class="summary-line">
+            <span>Islandwide Delivery:</span>
+            <span id="deliveryFee">Rs. 350</span>
+          </div>
+          <div class="summary-line total-line">
+            <span>Total Payable:</span>
+            <span id="cartTotal">Rs. 0</span>
+          </div>
+        </div>
+
+        <!-- Checkout Form -->
+        <div class="checkout-form-container">
+          <h4>Customer & Delivery Details</h4>
+          <form id="orderForm" onsubmit="handlePlaceOrder(event)">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="custName" placeholder="Kavindu Perera" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number (WhatsApp)</label>
+              <input type="tel" id="custPhone" placeholder="077 123 4567" required>
+            </div>
+            <div class="form-group">
+              <label>Delivery Address</label>
+              <textarea id="custAddress" placeholder="No. 12, Galle Road, Colombo 03" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Payment Method</label>
+              <div class="payment-options">
+                <label class="radio-label">
+                  <input type="radio" name="paymentMethod" value="Card" checked>
+                  Credit / Debit Card (Visa / Mastercard)
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="paymentMethod" value="OnlineBanking">
+                  FriMi / Genie / Bank Transfer
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="paymentMethod" value="Koko">
+                  Koko (3 Interest-Free Installments)
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="paymentMethod" value="COD">
+                  Cash on Delivery (COD)
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="payButton">
+              🔒 Proceed to Secure Payment
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Ceylon Artisanal Botanics</h3>
+        <p>Curators and direct exporters of true Ceylon cinnamon from Galle and Matara estate groves. Hand-peeled and sun-cured to perfection.</p>
+        <p class="phone">📞 +94 77 123 4567 | info@ceylonartisanal.lk</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product Range</h4>
+        <ul>
+          <li><a href="#products">Alba Grade Quills</a></li>
+          <li><a href="#products">C5 Pure Powder</a></li>
+          <li><a href="#products">Pure Bark Essential Oil</a></li>
+          <li><a href="#products">Cinnamon Infused Bee Honey</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Trust & Payment Gateways</h4>
+        <p>Accepting Visa, MasterCard, Amex, FriMi, Genie, Koko Pay & Bank Transfers.</p>
+        <div class="payment-badges">
+          <span>💳 VISA</span>
+          <span>💳 Mastercard</span>
+          <span>📱 FriMi</span>
+          <span>⚡ Genie</span>
+          <span>📦 COD</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>© 2025 Ceylon Artisanal Botanics. Pure Ceylon Cinnamomum Verum. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
